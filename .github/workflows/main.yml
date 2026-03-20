@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - main
-workflow_dispatch:
-
+  workflow_dispatch:
+  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,7 +20,7 @@ jobs:
 
       - run: mvn clean package
 
-      - uses: actions/upload-artifact@v7
+      - uses: actions/upload-artifact@v4
         with:
           name: jar
           path: target/*.jar
