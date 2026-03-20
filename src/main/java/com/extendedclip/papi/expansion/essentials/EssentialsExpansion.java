@@ -395,7 +395,7 @@ public class EssentialsExpansion extends PlaceholderExpansion {
             case "is_teleport_enabled":
                 return user.isTeleportEnabled() ? papiTrue : papiFalse;
             case "is_teleportauto_enabled":
-                return user.isTeleportAuto() ? papiTrue : papiFalse;
+                return user.isTpAuto() ? papiTrue : papiFalse;
             case "is_muted":
                 return user.isMuted() ? papiTrue : papiFalse;
             case "vanished":
